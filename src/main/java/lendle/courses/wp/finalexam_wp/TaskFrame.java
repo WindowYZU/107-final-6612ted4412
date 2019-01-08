@@ -29,8 +29,8 @@ import javax.swing.event.InternalFrameEvent;
  */
 public class TaskFrame extends JInternalFrame {
 
-    private JTextField textTitle = null;
-    private JTextArea textContent = null;
+    private final JTextField textTitle = null;
+    private final JTextArea textContent = null;
     private boolean modified = false;
 
     public TaskFrame() {
@@ -41,7 +41,7 @@ public class TaskFrame extends JInternalFrame {
         this.setClosable(true);
         this.setResizable(true);
         this.setVisible(true);
-
+        
         JPanel southPanel = new JPanel();
         this.add(southPanel, "South");
         JButton saveButton = new JButton("Save");
